@@ -48,6 +48,7 @@
     <Compile Include="Sorter.cs" />
     <Compile Include="Sorters\BubbleSorter.cs" />
     <Compile Include="Sorters\CocktailSorter.cs" />
+    <Compile Include="Sorters\CombSort.cs" />
     <Compile Include="Sorters\HeapSort.cs" />
     <Compile Include="Sorters\InsertSorter.cs" />
     <Compile Include="Sorters\MergeSorter.cs" />

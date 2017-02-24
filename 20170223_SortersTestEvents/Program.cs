@@ -25,10 +25,11 @@ namespace _20170223_SortersTestEvents
                 TestSortMethod(new SelectionSorter(adNumbers));
                 TestSortMethod(new InsertSorter(adNumbers));
                 TestSortMethod(new HeapSorter(adNumbers));
+                TestSortMethod(new CombSorter(adNumbers));
                 TestSortMethod(new ShellSorter(adNumbers));
-                TestSortMethod(new MergeSorter(adNumbers));
                 TestSortMethod(new QuickSorter(adNumbers));
                 TestSortMethod(new QuickSorterM(adNumbers));
+                TestSortMethod(new MergeSorter(adNumbers));
                 Console.WriteLine("Хотите повторить? Y/N.");
                 bProgramRun = TypeBoolean();
             } while (bProgramRun);
@@ -37,6 +38,7 @@ namespace _20170223_SortersTestEvents
         {
             SortLogger sl = new SortLogger(s);            
             s.Run();
+            //Console.WriteLine(s.IsSorted());
             Console.WriteLine(sl);
         }
         private static double[] GetRandomDoubleArray(int iSize, Random random)
